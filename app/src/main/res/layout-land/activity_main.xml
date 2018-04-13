@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        app:title="@string/app_name"
+        app:titleMarginStart="22dp"
+        app:titleTextColor="@color/colorBackground"
+        app:popupTheme="@mipmap/ic_launcher"
+        app:titleTextAppearance="@style/Toolbar.TitleText"></android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/imv_w"
+        android:layout_height="@dimen/imv_h_land"
+        android:layout_marginBottom="@dimen/imv_margin_b"
+        android:layout_marginTop="@dimen/imv_margin_t"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="420dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="500dp"
+        android:maxWidth="500dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_account" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        tools:context="it.polito.mad.lab1.MainActivity">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_et1_land"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_adb"
+            android:drawableStart="@drawable/ic_adb"
+            android:drawablePadding="10dp"
+            android:hint="@string/name"
+            android:inputType="textCapWords"
+            android:singleLine="false"
+            android:textSize="14sp" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_et2_land"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:hint="@string/mail"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_et3_land"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:hint="@string/Phone_number"
+            android:inputType="phone"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_et4_land"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_quote"
+            android:drawableStart="@drawable/ic_quote"
+            android:drawablePadding="10dp"
+            android:hint="@string/bio"
+            android:inputType="textCapSentences"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

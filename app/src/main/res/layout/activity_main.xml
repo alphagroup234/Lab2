@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.polito.mad.lab1.MainActivity"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:title="@string/app_name"
+        app:titleMarginStart="22dp"
+        app:titleTextColor="@color/colorBackground"
+        app:popupTheme="@mipmap/ic_launcher"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imv_h"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:contentDescription="image"
+        android:src="@drawable/ic_account" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="it.polito.mad.lab1.MainActivity"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_et1"
+            android:drawableLeft="@drawable/ic_adb"
+            android:drawableStart="@drawable/ic_adb"
+            android:drawablePadding="10dp"
+            android:hint="@string/name"
+            android:textSize="14sp" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_et2"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:hint="@string/mail"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_et3"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:hint="@string/Phone_number"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_et4"
+            android:drawableLeft="@drawable/ic_quote"
+            android:drawableStart="@drawable/ic_quote"
+            android:drawablePadding="10dp"
+            android:hint="@string/bio"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

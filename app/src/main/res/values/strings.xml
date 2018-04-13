@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BookSharing</string>
+    <string name="edit">Edit</string>
+    <string name="camere">From camera</string>
+    <string name="Gallery">From gallery</string>
+    <string name="Phone_number">Phone number</string>
+    <string name="name">Name</string>
+    <string name="bio">Short bio</string>
+    <string name="mail">Mail@mail.com</string>
+    <string name="confirm">Confirm</string>
+    <string name="clear">Clear all</string>
+
+</resources>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.rgd.my_option_menu.MainActivity">
+
+    <item
+        android:id="@+id/main_menu"
+        android:icon="@drawable/ic_photo_camera_white_24dp"
+        android:title=""
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/edit_photo"
+                android:title="@string/camere"
+                android:icon="@drawable/coustom_camera_icon"
+                android:visible="true"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/open_gallery"
+                android:title="@string/Gallery"
+                android:icon="@drawable/ic_image_black_24dp"
+                android:visible="true"
+                app:showAsAction="always" />
+
+        </menu>
+
+    </item>
+
+</menu>

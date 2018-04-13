@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="imv_margin_b">25dp</dimen>
+    <dimen name="imv_margin_t">62dp</dimen>
+    <dimen name="imv_w">80dp</dimen>
+    <dimen name="imv_h_land">165dp</dimen>
+    <dimen name="margin_et1_land">4dp</dimen>
+    <dimen name="margin_et2_land">4dp</dimen>
+    <dimen name="margin_et3_land">4dp</dimen>
+    <dimen name="margin_et4_land">4dp</dimen>
+
+</resources>

@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/colorItem</item>
+        <item name="android:colorError" tools:targetApi="o">@color/colorRed</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorBackground</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@android:color/holo_blue_dark</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="my_Theme" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="android:colorBackground">@color/background_material_light_1</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="it.polito.mad.lab1.MainActivity"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:title="@string/app_name"
+            app:titleMarginStart="50dp"
+            app:titleTextColor="@color/colorBackground"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            ></android.support.v7.widget.Toolbar>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/imv_h"
+                android:layout_margin="5dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:contentDescription="image"
+                android:src="@drawable/ic_account" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LinearLayoutText"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            tools:context="it.polito.mad.lab1.MainActivity"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="20dp">
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_et1"
+                android:drawableLeft="@drawable/ic_adb"
+                android:drawableStart="@drawable/ic_adb"
+                android:drawablePadding="10dp"
+                android:hint="@string/name"
+                android:inputType="textCapWords"
+                android:textSize="14sp" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_et2"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:hint="@string/mail"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/phone_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_et3"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:hint="@string/Phone_number"
+                android:inputType="phone"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_et4"
+                android:drawableLeft="@drawable/ic_quote"
+                android:drawableStart="@drawable/ic_quote"
+                android:drawablePadding="10dp"
+                android:hint="@string/bio"
+                android:inputType="textCapSentences"
+                android:textSize="14sp"
+                android:maxLength="50"/>
+        </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/LinearLayout02"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="@dimen/buttons_marginT"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="it.polito.mad.lab1.MainActivity">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:text="@string/confirm"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"></Button>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginStart="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:text="@string/clear"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="37dp"></Button>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

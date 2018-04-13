@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="imv_h">110dp</dimen>
+    <dimen name="buttons_marginT">2dp</dimen>
+    <dimen name="margin_et1">5dp</dimen>
+    <dimen name="margin_et2">5dp</dimen>
+    <dimen name="margin_et3">5dp</dimen>
+    <dimen name="margin_et4">5dp</dimen>
+
+</resources>

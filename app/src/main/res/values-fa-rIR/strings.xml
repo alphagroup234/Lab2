@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">نام</string>
+    <string name="mail">ایمیل آدرس</string>
+    <string name="bio">مشخصات</string>
+    <string name="app_name">اشتراک کتاب</string>
+    <string name="Phone_number">شماره تلفن</string>
+    <string name="confirm">تایید</string>
+    <string name="edit">ویرایش</string>
+    <string name="camere">دوربین</string>
+    <string name="Gallery">آلبوم عکس</string>
+    <string name="clear">پاک کردن</string>
+</resources>
